@@ -1,2 +1,2 @@
 # Learning_Operating_Systems
-This is me showing what i have been learning about Operating Systems. So far, there is a basic boot sector and loading into 32-bit protected mode. As I dig deeper and learn more of the basics, I will upload them here.
+Operating Systems are one of the greatest feats of humans ever. This holds all of the stuff I learn from 16-bit boot sectors to a custom bootloader.
