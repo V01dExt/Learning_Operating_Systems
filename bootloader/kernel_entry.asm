@@ -1,10 +1,15 @@
 [BITS 32]
 
 global _start
-extern _kernel_main
+extern kernel_main
 
 _start:
-    call _kernel_main
+    mov byte [0xb8000], '1'
+    mov byte [0xb8001], 0x07
 
-.hang:
-    jmp .hang   
+    call kernel_main
+
+hang:
+    cli
+    hlt
+    jmp hang
